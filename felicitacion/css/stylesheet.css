@@ -1,0 +1,176 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'navidad';
+    src: url(../fuentes/Red\ Christmas\ -\ Personal\ Use.otf);
+}
+/*Fin fuentes*/
+
+.maincontainer{
+    z-index: -1;
+}
+
+/*Header*/
+header{
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.linea{
+    height: 8px;
+    background-color: #006293;
+    width: 100%;
+    float: left;
+    position: absolute;
+}
+
+#cabecera{
+    height: 113px;
+}
+
+#cabecera img{
+    float: left;
+    height: 112px;
+}
+
+
+#cabecera h1{
+    margin: 0;
+    margin: 0 auto;
+    float: left;
+    width: fit-content;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+    font-size: 60px;
+    margin-top: 18px;
+    color: #006293;
+    text-decoration: underline;
+    padding-left: 3%;
+}
+
+/*main*/
+
+main{
+    height: fit-content;
+}
+
+#contenedor{
+    display: inline-block;
+}
+
+main h1{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: "navidad";
+    letter-spacing: 20px;
+    font-size: 9em;
+    padding-top: 70px;
+    color: #28ED60;
+    margin-bottom: 30px;
+    z-index: 1;
+    position: absolute;
+}
+
+/*Zona central*/
+#central{
+    margin: 0 auto;
+    height: 750px;
+    width: 65%;
+    position: absolute;
+    margin-left: 17.5%;
+    padding-top: 200px;
+}
+/*Libro*/
+#central img{
+    width: 100%;
+    height: 730px;
+    z-index: 0;
+}
+
+#pagIzquierda, #pagDerecha{
+    width: 40%;
+    height: 680px;
+    position: absolute;
+    margin-top: 20px;
+    border: 1px solid #0EA137;
+    border-radius: 4px;
+}
+
+#pagIzquierda{
+    margin-left: 8%;
+}
+
+#pagDerecha{
+    margin-left: 54%;
+}
+
+#nina{
+    width: 28%;
+}
+
+#nina img{
+    height: 160px;
+}
+/*Esquinas*/
+#marco div{
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 500px;
+}
+
+#marco div img{
+    width: 100%;
+}
+
+#sDerecha, #iDerecha{
+    padding-left: 46%;
+}
+
+
+/*Footer*/
+footer{
+    background-color: #006293;
+    height: 40px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+p{
+    color: white;
+}
+
+@media (max-width: 1440px){
+
+    #cabecera h1{
+        font-size: 3em;
+        padding-top: 10px;
+    }
+
+    
+    #marco div{
+        width: 34%;
+        height: 535px;
+    }
+
+    #sDerecha, #iDerecha{
+        padding-left: 31%;
+    }
+
+    #nina{
+        width: 35%;
+    }
+
+    #nina img{
+        height: 120px;
+    }
+
+    footer{
+        margin-top: 0px;
+    }
+
+}
