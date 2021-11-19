@@ -140,9 +140,6 @@ footer{
     margin-top: 150px;
 }
 
-p{
-    color: white;
-}
 
 @media (max-width: 1440px){
 
@@ -151,14 +148,34 @@ p{
         padding-top: 10px;
     }
 
+    main{
+        padding-top: 75px;
+    }
+
+    main h1{
+        font-size: 5em;
+    }
     
     #marco div{
-        width: 34%;
-        height: 535px;
+        width: 29%;
+        height: 390px;
     }
 
     #sDerecha, #iDerecha{
-        padding-left: 31%;
+        padding-left: 42%;
+    }
+
+    #central{
+        width: 60%;
+        bottom: 0;
+    }
+
+    #central img{
+        height: 550px;
+    }
+
+    #pagIzquierda, #pagDerecha{
+        height: 500px;
     }
 
     #nina{
@@ -170,7 +187,7 @@ p{
     }
 
     footer{
-        margin-top: 0px;
+        margin-top: 75px;
     }
 
 }
