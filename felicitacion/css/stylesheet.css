@@ -100,13 +100,43 @@ main h1{
     margin-left: 54%;
 }
 
-#nina{
-    width: 28%;
+#pagDerecha div{
+    width: 20%;
+    position: relative;
 }
 
-#nina img{
-    height: 160px;
+#asha img, #parti img, #cam img, #destor img, #robot img{
+    height: auto;
 }
+
+#asha{
+    width: 37% !important;
+    left: 35% !important;
+    top: 35% !important;
+}
+
+#parti{
+    width: 12% !important;
+    left: 10%;
+    bottom: 40%;
+}
+
+#cam{
+    left: 75%;
+    bottom: 25%;
+}
+
+#destor {
+    width: 15% !important;
+    left: 75%;
+    top: 15%;
+}
+
+#robot{
+    left: 8%;
+    bottom: 9%;
+}
+
 /*Esquinas*/
 #marco div{
     position: relative;
@@ -127,13 +157,82 @@ main h1{
 /*Footer*/
 footer{
     background-color: #006293;
-    height: 40px;
+    height: 55px;
     width: 100%;
     margin-top: 150px;
+    color: white;
+    text-align: center;
 }
 
+footer div {
+    width: 2%;
+    height: 38px;
+    position: relative;
+}
 
-@media (max-width: 1440px){
+#face{
+    left: 84%;
+    bottom: 59%;
+}
+
+#twi{
+    left: 87%;
+    bottom: 128%;
+}
+
+#insta{
+    left: 90%;
+    bottom: 197%;
+}
+
+footer div img {
+    width: 100%;
+}
+
+span{
+    display: inline-block;
+    margin-top: 18px;
+}
+
+/*Media querys*/
+
+/*primera media*/
+@media (min-width: 1650px) and (max-width:1900px){
+
+    #contenedor{
+        height: 1142px;
+    }
+
+    #marco div{
+        position: relative;
+        float: left;
+        width: 27%;
+        height: 600px;
+    }
+
+    #asha{
+        width: 31%;
+    }
+
+    footer{
+        margin-top: 0px;
+    }
+
+    #face{
+        bottom: 51%;
+    }
+    
+    #twi{
+        bottom: 118%;
+    }
+    
+    #insta{
+        bottom: 187%;
+    }
+}
+
+/*segunda media*/
+@media (min-width:1400px) and (max-width: 1600px){
 
     #cabecera h1{
         font-size: 2em;
@@ -141,11 +240,15 @@ footer{
     }
 
     main{
-        padding-top: 75px;
+        padding-top: 20px;
     }
 
     main h1{
         font-size: 5em;
+    }
+
+    #contenedor{
+        height: 820px;
     }
     
     #marco div{
@@ -160,7 +263,7 @@ footer{
     #central{
         width: 60%;
         bottom: 0;
-        height: 750px;
+        height: 790px;
     }
 
     #central img{
@@ -171,11 +274,15 @@ footer{
         height: 500px;
     }
 
-    #nina{
+    #sDerecha, #iDerecha{
+        padding-left: 37%;
+    }
+
+    #asha{
         width: 35%;
     }
 
-    #nina img{
+    #asha img{
         height: 120px;
     }
 
@@ -183,4 +290,102 @@ footer{
         margin-top: 75px;
     }
 
+    #face{
+        bottom: 47%;
+    }
+    
+    #twi{
+        bottom: 114%;
+    }
+    
+    #insta{
+        bottom: 183%;
+    }
+
+}
+
+/*tercera media*/
+@media (min-width: 360px) and (max-width: 400px){
+
+    header{
+        height: 45px;
+    }
+
+    #cabecera h1{
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    
+    #cabecera img{
+        height: 45px;
+    }
+
+    main{
+
+    }
+
+    main h1{
+        letter-spacing: 3px;
+        font-size: 45px;
+        padding-top: 14px;
+    }
+
+    #contenedor{
+        height: 317px;
+    }
+
+    #marco div{
+        height: 360px;
+    }
+
+    #central{
+        padding-top: 65px;
+        margin-left: 9.5%;
+        width: 81%;
+    }
+
+    #central img{
+        height: 360px;
+    }
+
+    #pagIzquierda, #pagDerecha{
+        height: 320px;
+    }
+
+    #asha{
+        width: 50%;
+        left: 25%;
+        top: 40%;
+    }
+
+    #asha img{
+        height: auto;
+    }
+
+    footer div{
+        width: 5%;
+        height: 19px;
+
+    }
+
+    span{
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    #face{
+        left: 26%;
+        top: 14%;
+    }
+    
+    #twi{
+        left: 48%;
+        bottom: 21%;
+    }
+    
+    #insta{
+        left: 70%;
+        bottom: 54%;
+    }
 }
