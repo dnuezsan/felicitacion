@@ -59,22 +59,19 @@ main h1{
     text-align: center;
     font-family: "navidad";
     letter-spacing: 20px;
-    font-size: 9em;
-    padding-top: 70px;
+    font-size: 8em;
+    padding-top: 60px;
     color: #FAE404;
-    margin-bottom: 30px;
-    z-index: 1;
     position: absolute;
 }
 
 /*Zona central*/
 #central{
-    margin: 0 auto;
     height: 750px;
     width: 65%;
     position: absolute;
     margin-left: 17.5%;
-    padding-top: 200px;
+    padding-top: 160px;
 }
 /*Libro*/
 #central img{
@@ -101,7 +98,6 @@ main h1{
 }
 
 #pagDerecha div{
-    width: 20%;
     position: relative;
 }
 
@@ -110,31 +106,33 @@ main h1{
 }
 
 #asha{
-    width: 37% !important;
-    left: 35% !important;
-    top: 35% !important;
+    width: 40% ;
+    left: 35% ;
+    top: 35% ;
 }
 
 #parti{
-    width: 12% !important;
+    width: 12% ;
     left: 10%;
     bottom: 40%;
 }
 
 #cam{
+    width: 20%;
     left: 75%;
-    bottom: 25%;
+    bottom: 26%;
 }
 
 #destor {
-    width: 15% !important;
+    width: 15% ;
     left: 75%;
     top: 15%;
 }
 
 #robot{
-    left: 8%;
-    bottom: 9%;
+    width: 35%;
+    left: 2%;
+    bottom: 28%;
 }
 
 /*Esquinas*/
@@ -159,7 +157,7 @@ footer{
     background-color: #006293;
     height: 55px;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 134px;
     color: white;
     text-align: center;
 }
@@ -211,7 +209,25 @@ span{
     }
 
     #asha{
-        width: 31%;
+        width: 40%;
+        top: 27%
+    }
+
+    #parti{
+        bottom: 31%;
+    }
+
+    #cam{
+        bottom: 21%;
+    }
+
+    #destor{
+        top: 35%;
+    }
+
+    #robot{
+        width: 40%;
+        top: 0;
     }
 
     footer{
@@ -219,15 +235,15 @@ span{
     }
 
     #face{
-        bottom: 51%;
+        bottom: 51% !important;
     }
     
     #twi{
-        bottom: 118%;
+        bottom: 118% !important;
     }
     
     #insta{
-        bottom: 187%;
+        bottom: 187% !important;
     }
 }
 
@@ -252,7 +268,7 @@ span{
     }
     
     #marco div{
-        width: 29%;
+        width: 31%;
         height: 390px;
     }
 
@@ -261,13 +277,17 @@ span{
     }
 
     #central{
-        width: 60%;
-        bottom: 0;
+        width: 64%;
         height: 790px;
+        padding-top: 150px;
     }
 
     #central img{
         height: 550px;
+    }
+
+    #central div img{
+        height: auto;
     }
 
     #pagIzquierda, #pagDerecha{
@@ -279,11 +299,30 @@ span{
     }
 
     #asha{
-        width: 35%;
+        width: 45%;
+        left: 32%;
+        top: 20%;
     }
 
     #asha img{
         height: 120px;
+    }
+
+    #parti{
+        bottom: 40%;
+    }
+
+    #cam{
+        bottom: 30%;
+    }
+
+    #robot{
+        bottom: 18%;
+        width: 40%;
+    }
+
+    #destor{
+        top: 23%;
     }
 
     footer{
@@ -305,7 +344,7 @@ span{
 }
 
 /*tercera media*/
-@media (min-width: 360px) and (max-width: 400px){
+@media (min-width: 340px) and (max-width: 411px){
 
     header{
         height: 45px;
@@ -321,10 +360,6 @@ span{
         height: 45px;
     }
 
-    main{
-
-    }
-
     main h1{
         letter-spacing: 3px;
         font-size: 45px;
@@ -332,7 +367,7 @@ span{
     }
 
     #contenedor{
-        height: 317px;
+        height: 506px;
     }
 
     #marco div{
@@ -340,9 +375,9 @@ span{
     }
 
     #central{
-        padding-top: 65px;
-        margin-left: 9.5%;
-        width: 81%;
+        padding-top: 60px;
+        margin-left: 6.5%;
+        width: 87%;
     }
 
     #central img{
@@ -353,10 +388,37 @@ span{
         height: 320px;
     }
 
+    #pagDerecha img{
+        height: auto;
+    }
+
     #asha{
-        width: 50%;
-        left: 25%;
-        top: 40%;
+        width: 65%;
+        left: 22%;
+        top: 30%;
+    }
+
+    #parti{
+        width: 23%;
+        bottom: 34%;
+    }
+
+    #cam{
+        width: 35%;
+        left: 63%;
+        bottom: 23%;
+    }
+
+    #destor{
+        width: 22%;
+        left: 70%;
+        top: 36%;
+    }
+
+    #robot{
+        width: 70%;
+        left: 15%;
+        bottom: 2%;
     }
 
     #asha img{
@@ -387,5 +449,9 @@ span{
     #insta{
         left: 70%;
         bottom: 54%;
+    }
+
+    footer{
+        margin-top: 0px;
     }
 }
