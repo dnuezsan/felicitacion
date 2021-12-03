@@ -148,7 +148,7 @@ main h1{
 }
 
 #sDerecha, #iDerecha{
-    padding-left: 46%;
+    margin-left: 46%;
 }
 
 
@@ -273,7 +273,7 @@ span{
     }
 
     #sDerecha, #iDerecha{
-        padding-left: 42%;
+        margin-left: 37%;
     }
 
     #central{
@@ -294,9 +294,7 @@ span{
         height: 500px;
     }
 
-    #sDerecha, #iDerecha{
-        padding-left: 37%;
-    }
+    
 
     #asha{
         width: 45%;
@@ -344,7 +342,7 @@ span{
 }
 
 /*tercera media*/
-@media (min-width: 340px) and (max-width: 411px){
+@media (min-width: 360px) and (max-width: 411px){
 
     header{
         height: 45px;
