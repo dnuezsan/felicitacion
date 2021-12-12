@@ -11,6 +11,12 @@
     z-index: -1;
 }
 
+/* Body */
+body{
+    margin: 0 auto;
+    font-size: 25px;
+}
+
 /*Header*/
 header{
     background-color: white;
@@ -21,6 +27,7 @@ header{
 
 #cabecera{
     height: 113px;
+    width: 100%;
 }
 
 #cabecera img{
@@ -33,7 +40,7 @@ header{
     margin: 0;
     margin: 0 auto;
     float: left;
-    width: fit-content;
+    width: 89.201%;
     font-family: "Roboto";
     letter-spacing: 2px;
     font-size: 2em;
@@ -41,12 +48,14 @@ header{
     color: #006293;
     font-weight: bold;
     padding-left: 3%;
+    font-size: 1.5em;
 }
 
 /*main*/
 
 main{
     height: fit-content;
+    padding-top: 50px;
 }
 
 #contenedor{
@@ -59,7 +68,7 @@ main h1{
     text-align: center;
     font-family: "navidad";
     letter-spacing: 20px;
-    font-size: 8em;
+    font-size: 5em;
     padding-top: 60px;
     color: #FAE404;
     position: absolute;
@@ -156,31 +165,32 @@ main h1{
 footer{
     background-color: #006293;
     height: 55px;
-    width: 100%;
+    width: 96.552%;
     margin-top: 134px;
     color: white;
+    display: block;
     text-align: center;
+    bottom: 0px;
+    padding-left: 3.5%;
 }
 
 footer div {
     width: 2%;
     height: 38px;
     position: relative;
+    display: inline-block;
 }
 
 #face{
-    left: 84%;
-    bottom: 59%;
+    left: 28%;    
 }
 
 #twi{
-    left: 87%;
-    bottom: 128%;
+    left: 29%;
 }
 
 #insta{
-    left: 90%;
-    bottom: 197%;
+    left: 30%;
 }
 
 footer div img {
@@ -190,6 +200,7 @@ footer div img {
 span{
     display: inline-block;
     margin-top: 18px;
+    padding-left: 3.5%;
 }
 
 /*Media querys*/
@@ -197,8 +208,12 @@ span{
 /*primera media*/
 @media (min-width: 1650px) and (max-width:1900px){
 
-    #contenedor{
-        height: 1142px;
+    #cabecera h1{
+        font-size: 1.9em;
+    }
+
+    #contenedor h1{
+        font-size: 5em;
     }
 
     #marco div{
@@ -232,18 +247,24 @@ span{
 
     footer{
         margin-top: 0px;
+        padding-left: 3.5%;
+        width: 96.5%;
+    }
+
+    footer span{
+        padding-left: 3.5%;
     }
 
     #face{
-        bottom: 51% !important;
+        left: 25%;
     }
     
     #twi{
-        bottom: 118% !important;
+        left: 26%;
     }
     
     #insta{
-        bottom: 187% !important;
+        left: 27%;
     }
 }
 
@@ -251,8 +272,9 @@ span{
 @media (min-width:1400px) and (max-width: 1600px){
 
     #cabecera h1{
-        font-size: 2em;
+        font-size: 1.5em;
         padding-top: 10px;
+        width: 88.978%;
     }
 
     main{
@@ -260,7 +282,7 @@ span{
     }
 
     main h1{
-        font-size: 5em;
+        font-size: 4em;
     }
 
     #contenedor{
@@ -294,8 +316,6 @@ span{
         height: 500px;
     }
 
-    
-
     #asha{
         width: 45%;
         left: 32%;
@@ -325,24 +345,25 @@ span{
 
     footer{
         margin-top: 75px;
+        width: 96.46%;
     }
 
     #face{
-        bottom: 47%;
+        left: 19%;
     }
     
     #twi{
-        bottom: 114%;
+        left: 20%;
     }
     
     #insta{
-        bottom: 183%;
+        left: 21%;
     }
 
 }
 
 /*tercera media*/
-@media (min-width: 360px) and (max-width: 411px){
+@media (min-width: 360px) and (max-width: 390px){
 
     header{
         height: 45px;
@@ -351,11 +372,15 @@ span{
     #cabecera h1{
         font-size: 12px;
         text-transform: uppercase;
-        padding-top: 10px;
+        width: 78.532%;
     }
     
     #cabecera img{
         height: 45px;
+    }
+
+    main{
+        padding-top: 0px;
     }
 
     main h1{
@@ -364,18 +389,21 @@ span{
         padding-top: 14px;
     }
 
-    #contenedor{
-        height: 506px;
-    }
 
     #marco div{
-        height: 360px;
+        height: auto;
+    }
+
+    #iIzquierda, #iDerecha{
+        height: fit-content;
+        margin-top: 71%;
     }
 
     #central{
         padding-top: 60px;
         margin-left: 6.5%;
         width: 87%;
+        height: auto;
     }
 
     #central img{
@@ -429,27 +457,39 @@ span{
 
     }
 
-    span{
-        margin-top: 0;
-        font-size: 15px;
-    }
-
     #face{
-        left: 26%;
+        left: -28%;
         top: 14%;
     }
     
     #twi{
-        left: 48%;
+        left: -5%;
         bottom: 21%;
     }
     
     #insta{
-        left: 70%;
+        left: 18%;
         bottom: 54%;
     }
 
     footer{
-        margin-top: 0px;
+        padding-left: 10.092%;
+        width: 89.91%;
+        height: auto;
+        position: fixed;
     }
+
+    footer div {
+        display: inline-block;
+        height: auto;
+    }
+
+    span{
+        margin-top: 0;
+        font-size: 15px;
+        display: block;
+        padding-left: 0px;
+        padding-right: 10.092%;
+    }
+
 }

@@ -1,0 +1,495 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'navidad';
+    src: url(../recursos/fuentes/Red\ Christmas\ -\ Personal\ Use.otf);
+}
+/*Fin fuentes*/
+
+.maincontainer{
+    z-index: -1;
+}
+
+/* Body */
+body{
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+/*Header*/
+header{
+    background-color: white;
+    height: 76px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#cabecera{
+    height: 113px;
+    width: 100%;
+}
+
+#cabecera img{
+    float: left;
+    height: 76px;
+}
+
+
+#cabecera h1{
+    margin: 0;
+    margin: 0 auto;
+    float: left;
+    width: 89.201%;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin-top: 18px;
+    color: #006293;
+    font-weight: bold;
+    padding-left: 3%;
+    font-size: 1.5em;
+}
+
+/*main*/
+
+main{
+    height: fit-content;
+    padding-top: 50px;
+}
+
+#contenedor{
+    display: inline-block;
+}
+
+main h1{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: "navidad";
+    letter-spacing: 20px;
+    font-size: 5em;
+    padding-top: 60px;
+    color: #FAE404;
+    position: absolute;
+}
+
+/*Zona central*/
+#central{
+    height: 750px;
+    width: 65%;
+    position: absolute;
+    margin-left: 17.5%;
+    padding-top: 160px;
+}
+/*Libro*/
+#central img{
+    width: 100%;
+    height: 730px;
+    z-index: 0;
+}
+
+#pagIzquierda, #pagDerecha{
+    width: 40%;
+    height: 680px;
+    position: absolute;
+    margin-top: 20px;
+    border: 1px solid #FAE404;
+    border-radius: 4px;
+}
+
+#pagIzquierda{
+    margin-left: 8%;
+}
+
+#pagDerecha{
+    margin-left: 54%;
+}
+
+#pagDerecha div{
+    position: relative;
+}
+
+#asha img, #parti img, #cam img, #destor img, #robot img{
+    height: auto;
+}
+
+#asha{
+    width: 40% ;
+    left: 35% ;
+    top: 35% ;
+}
+
+#parti{
+    width: 12% ;
+    left: 10%;
+    bottom: 40%;
+}
+
+#cam{
+    width: 20%;
+    left: 75%;
+    bottom: 26%;
+}
+
+#destor {
+    width: 15% ;
+    left: 75%;
+    top: 15%;
+}
+
+#robot{
+    width: 35%;
+    left: 2%;
+    bottom: 28%;
+}
+
+/*Esquinas*/
+#marco div{
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 500px;
+}
+
+#marco div img{
+    width: 100%;
+}
+
+#sDerecha, #iDerecha{
+    margin-left: 46%;
+}
+
+
+/*Footer*/
+footer{
+    background-color: #006293;
+    height: 55px;
+    width: 96.552%;
+    margin-top: 134px;
+    color: white;
+    display: block;
+    text-align: center;
+    bottom: 0px;
+    padding-left: 3.5%;
+}
+
+footer div {
+    width: 2%;
+    height: 38px;
+    position: relative;
+    display: inline-block;
+}
+
+#face{
+    left: 28%;    
+}
+
+#twi{
+    left: 29%;
+}
+
+#insta{
+    left: 30%;
+}
+
+footer div img {
+    width: 100%;
+}
+
+span{
+    display: inline-block;
+    margin-top: 18px;
+    padding-left: 3.5%;
+}
+
+/*Media querys*/
+
+/*primera media*/
+@media (min-width: 1650px) and (max-width:1900px){
+
+    #cabecera h1{
+        font-size: 1.9em;
+    }
+
+    #contenedor h1{
+        font-size: 5em;
+    }
+
+    #marco div{
+        position: relative;
+        float: left;
+        width: 27%;
+        height: 600px;
+    }
+
+    #asha{
+        width: 40%;
+        top: 27%
+    }
+
+    #parti{
+        bottom: 31%;
+    }
+
+    #cam{
+        bottom: 21%;
+    }
+
+    #destor{
+        top: 35%;
+    }
+
+    #robot{
+        width: 40%;
+        top: 0;
+    }
+
+    footer{
+        margin-top: 0px;
+        padding-left: 3.5%;
+        width: 96.5%;
+    }
+
+    footer span{
+        padding-left: 3.5%;
+    }
+
+    #face{
+        left: 25%;
+    }
+    
+    #twi{
+        left: 26%;
+    }
+    
+    #insta{
+        left: 27%;
+    }
+}
+
+/*segunda media*/
+@media (min-width:1400px) and (max-width: 1600px){
+
+    #cabecera h1{
+        font-size: 1.5em;
+        padding-top: 10px;
+        width: 88.978%;
+    }
+
+    main{
+        padding-top: 20px;
+    }
+
+    main h1{
+        font-size: 4em;
+    }
+
+    #contenedor{
+        height: 820px;
+    }
+    
+    #marco div{
+        width: 31%;
+        height: 390px;
+    }
+
+    #sDerecha, #iDerecha{
+        margin-left: 37%;
+    }
+
+    #central{
+        width: 64%;
+        height: 790px;
+        padding-top: 150px;
+    }
+
+    #central img{
+        height: 550px;
+    }
+
+    #central div img{
+        height: auto;
+    }
+
+    #pagIzquierda, #pagDerecha{
+        height: 500px;
+    }
+
+    #asha{
+        width: 45%;
+        left: 32%;
+        top: 20%;
+    }
+
+    #asha img{
+        height: 120px;
+    }
+
+    #parti{
+        bottom: 40%;
+    }
+
+    #cam{
+        bottom: 30%;
+    }
+
+    #robot{
+        bottom: 18%;
+        width: 40%;
+    }
+
+    #destor{
+        top: 23%;
+    }
+
+    footer{
+        margin-top: 75px;
+        width: 96.46%;
+    }
+
+    #face{
+        left: 19%;
+    }
+    
+    #twi{
+        left: 20%;
+    }
+    
+    #insta{
+        left: 21%;
+    }
+
+}
+
+/*tercera media*/
+@media (min-width: 360px) and (max-width: 390px){
+
+    header{
+        height: 45px;
+    }
+
+    #cabecera h1{
+        font-size: 12px;
+        text-transform: uppercase;
+        width: 78.532%;
+    }
+    
+    #cabecera img{
+        height: 45px;
+    }
+
+    main{
+        padding-top: 0px;
+    }
+
+    main h1{
+        letter-spacing: 3px;
+        font-size: 45px;
+        padding-top: 14px;
+    }
+
+
+    #marco div{
+        height: auto;
+    }
+
+    #iIzquierda, #iDerecha{
+        height: fit-content;
+        margin-top: 71%;
+    }
+
+    #central{
+        padding-top: 60px;
+        margin-left: 6.5%;
+        width: 87%;
+        height: auto;
+    }
+
+    #central img{
+        height: 360px;
+    }
+
+    #pagIzquierda, #pagDerecha{
+        height: 320px;
+    }
+
+    #pagDerecha img{
+        height: auto;
+    }
+
+    #asha{
+        width: 65%;
+        left: 22%;
+        top: 30%;
+    }
+
+    #parti{
+        width: 23%;
+        bottom: 34%;
+    }
+
+    #cam{
+        width: 35%;
+        left: 63%;
+        bottom: 23%;
+    }
+
+    #destor{
+        width: 22%;
+        left: 70%;
+        top: 36%;
+    }
+
+    #robot{
+        width: 70%;
+        left: 15%;
+        bottom: 2%;
+    }
+
+    #asha img{
+        height: auto;
+    }
+
+    footer div{
+        width: 5%;
+        height: 19px;
+
+    }
+
+    #face{
+        left: -28%;
+        top: 14%;
+    }
+    
+    #twi{
+        left: -5%;
+        bottom: 21%;
+    }
+    
+    #insta{
+        left: 18%;
+        bottom: 54%;
+    }
+
+    footer{
+        padding-left: 10.092%;
+        width: 89.91%;
+        height: auto;
+        position: fixed;
+    }
+
+    footer div {
+        display: inline-block;
+        height: auto;
+    }
+
+    span{
+        margin-top: 0;
+        font-size: 15px;
+        display: block;
+        padding-left: 0px;
+        padding-right: 10.092%;
+    }
+
+}
