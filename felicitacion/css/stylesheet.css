@@ -106,8 +106,6 @@ main h1{
 #pagIzquierda{
     margin-left: 8%;
     font-family: "calanthe";
-    color: #00000038;
-    transition: color 1.5s linear;
 }
 
 #pagDerecha{
