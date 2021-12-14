@@ -6,10 +6,18 @@ function iniciar() {
 
 
     //controlPeli()
-
-    let prueba = pagIzquierda.textContent = 'HAZ CLICK AQUÍ'
-
-    eleccionParrafo()
+        let izquierda = document.getElementById('pagIzquierda')
+        let central = document.createElement('p')
+        izquierda.appendChild(central)
+        central.textContent = 'PULSA AQUÍ'
+        central.style.margin = '0 auto'
+        central.style.width = 'fit-content'
+        central.style.fontSize = '2.5rem'
+        central.style.marginTop = '48%'
+        central.style.textAlign= 'center'
+        pagDerecha.style.visibility = 'hidden'
+        
+    escribir()
 
     robot.style.visibility = 'hidden'
 
@@ -104,57 +112,54 @@ function fabricación() {
 }
 
 //Texto
-function escribir(entrada) {
-    /* let texto = pagina1.split('')
-    let i = 0
-    let parrafo = document.createElement('p')
-    document.getElementById('pagIzquierda').appendChild(parrafo)
-    pagIzquierda.textContent = ''
-    setInterval(() => {
-       let letra = pagIzquierda.textContent = pagIzquierda.innerHTML + texto[i]
-        letra = 'black'
-        i++
-    }, 50); */
 
+
+function escritura(entrada) {
     let texto = entrada.split('')
     let i = 0
     pagIzquierda.textContent = ''
-    texto.forEach(element => {
-        setInterval(() => {
-            let letra = pagIzquierda.textContent = pagIzquierda.innerHTML + element
-            i++
-        }, 50);
-    });
+    let escritor = setInterval(() => {
+        pagIzquierda.append(texto[i])
+        i++
+        if (i == texto.length) {
+            clearInterval(escritor)
+        }
+    }, 10)
+
 
 }
 
-function eleccionParrafo() {
+function escribir() {
     let i = 0
-    let array = [prueba1, prueba2]
+    let array = [parrafo1, parrafo2, parrafo3, parrafo4, parrafo5, parrafo6, parrafo7, parrafo8]
     pagIzquierda.onclick = () => {
-        escribir(array[i])
+        escritura(array[i])
+        i++
+        if (i == 4) {
+            pagDerecha.style.visibility = 'visible'
+        }
     }
 }
 
-let prueba1 = 'gdfgjrtklñj'
-let prueba2 = '22222222222222'
 
-let pagina1 = `Hace mucho, mucho tiempo; en una tierra lejana nació un niño especial. Antiguas profecías hablaban de que ese niño traería el reino de Dios a los hombres, y tres
-grandes reyes magos de oriente guiados por una estrella vinieron a recibirlo con tres obsequios: oro incieso y mirra. El niño creció y realizó obras y prodigios que cambiaron el mundo
-para siempre, dejándonos un legado espiritual basado en el amor a Dios y al prójimo que se extiende hasta nuestros días. Hoy el mundo cuenta con grandes avances tecnológicos. El progreso
-trajo medios para reducir el hambre y la escasez, comunicar el mundo y mejorar la calidad de vida de las personas. Sin embargo, no es suficiente y muchos sufren pobreza y desigualdad. <br />
+let parrafo1 = `Hace mucho, mucho tiempo; en una tierra lejana nació un niño especial. Antiguas profecías hablaban de que ese niño traería el reino de Dios a los hombres, y tres
+grandes reyes magos de oriente guiados por una estrella vinieron a recibirlo con tres obsequios: oro incieso y mirra.`
+
+let parrafo2 = `El niño creció y realizó obras y prodigios que cambiaron el mundo
+para siempre, dejándonos un legado espiritual basado en el amor a Dios y al prójimo que se extiende hasta nuestros días.`
+
+let parrafo3 = `Hoy el mundo cuenta con grandes avances tecnológicos. El progreso
+trajo medios para reducir el hambre y la escasez, comunicar el mundo y mejorar la calidad de vida de las personas. Sin embargo, no es suficiente y muchos sufren pobreza y desigualdad.
 Pero no os desanimeis, aun hay algo que se puede hacer.`
 
-/* let pagina1 = pagIzquierda.innerHTML= `Hace mucho, mucho tiempo; en una tierra lejana nació un niño especial. Antiguas profecías hablaban de que ese niño traería el reino de Dios a los hombres, y tres
-grandes reyes magos de oriente guiados por una estrella vinieron a recibirlo con tres obsequios: oro incieso y mirra. <br />El niño creció y realizó obras y prodigios que cambiaron el mundo
-para siempre, dejándonos un legado espiritual basado en el amor a Dios y al prójimo que se extiende hasta nuestros días. <br />Hoy el mundo cuenta con grandes avances tecnológicos. El progreso
-trajo medios para reducir el hambre y la escasez, comunicar el mundo y mejorar la calidad de vida de las personas. Sin embargo, no es suficiente y muchos sufren pobreza y desigualdad. <br />
-Pero no os desanimeis, aun hay algo que se puede hacer.` */
+let parrafo4 = `Os presento a Asha.`
 
-/* let pagina2 = pagIzquierda.innerHTML= `Os presento a Asha.<br />Ella es una niña de 8 años que vive en una aldea de la India. A Asha le gusta jugar con otros niños, cuidar los animales de su familia y ayudar a 
-su abuela a cocinar. Pero si hay algo que de verdad la emociona es ir a la escuela. Allí no solo aprende a leer y escribir. A través de sus maestros comprende que el mundo es muy grande e imagina
-todos los lugares que le gustaría conocer. También disfruta de descrifrar los secretos de las matemáticas (ya ha evitado que cobren de más a sus padres 2 veces en el mercadillo).<br />
-Asha cree que si aprende más, un día podrá mejorar la vida de las personas, pero sus padre no tienes medios para pagar su educación. <br />
-Ella tiene grandes sueños como ser una gran compositora, hacer robots, rodar películas... ¿Por qué no la ayudas? `
- */
-/* let final = pagIzquierda.innerHTML = `Recuerda al niño de la historia <br />¿Imaginas que todos tuvieran la oportunidad de desarrollar su potencial?<br />Atrévete a dejarles soñar, para que algún día den fruto` */
+let parrafo5 = `Ella es una niña de 8 años que vive en una aldea de la India. A Asha le gusta jugar con otros niños, cuidar los animales de su familia y ayudar a 
+su abuela a cocinar. Pero lo que más le gusta es ir a la escuela. Allí no solo aprende a leer y escribir. A través de sus maestros aprende que el mundo es muy grande e imagina
+todos los lugares que le gustaría conocer. También le gusta descrifrar los secretos de las matemáticas (ya ha evitado que engañen a sus padres 2 veces en el mercadillo).`
+
+let parrafo6 = `Asha cree que si aprende más, un día podrá mejorar la vida de las personas, pero sus padres no tienen medios para pagar su educación.`
+
+let parrafo7 = `Ella tiene grandes sueños como ser una gran compositora, hacer robots, rodar películas... ¿Por qué no la ayudas? `
+
+let parrafo8 = `Recuerda al niño de la historia ¿Imaginas que todos tuvieran la oportunidad de desarrollar su potencial? Atrévete a dejarles soñar, para que algún día den fruto.`
