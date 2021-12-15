@@ -185,19 +185,11 @@ function escribir() {
         i++
         console.log(i);
         if (i == 4) {
-            reverlar()
+            pagDerecha.style.visibility = 'visible'
         }
     }
 }
 
-
-/**
- *Devuelve la visibilidad a los elementos de la derecha
- *
- */
-function revelar() {
-    pagDerecha.style.visibility = 'visible'
-}
 
 //Contenido del libro
 let parrafo1 = `Hace mucho, mucho tiempo; en una tierra lejana nació un niño especial. Antiguas profecías hablaban de que ese niño traería el reino de Dios a los hombres, y tres
