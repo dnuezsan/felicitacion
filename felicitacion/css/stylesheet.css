@@ -178,7 +178,7 @@ footer{
     text-align: center;
     bottom: 0px;
     padding-left: 3.5%;
-    position: absolute;
+    position: fixed;
 }
 
 footer div {
