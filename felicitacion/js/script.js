@@ -6,17 +6,17 @@ function iniciar() {
 
 
     //controlPeli()
-        let izquierda = document.getElementById('pagIzquierda')
-        let central = document.createElement('p')
-        izquierda.appendChild(central)
-        central.textContent = 'PULSA AQUÍ'
-        central.style.margin = '0 auto'
-        central.style.width = 'fit-content'
-        central.style.fontSize = '2.5rem'
-        central.style.marginTop = '48%'
-        central.style.textAlign= 'center'
-        pagDerecha.style.visibility = 'hidden'
-        
+    let izquierda = document.getElementById('pagIzquierda')
+    let central = document.createElement('p')
+    izquierda.appendChild(central)
+    central.textContent = 'PULSA AQUÍ'
+    central.style.margin = '0 auto'
+    central.style.width = 'fit-content'
+    central.style.fontSize = '2.5rem'
+    central.style.marginTop = '48%'
+    central.style.textAlign = 'center'
+    pagDerecha.style.visibility = 'hidden'
+
     escribir()
 
     robot.style.visibility = 'hidden'
@@ -63,12 +63,13 @@ function musica() {
 
 function controlPeli() {
     let video = document.createElement('video')
+    video.setAttribute('id')='pelicula'
     central.appendChild(video)
     video.style.position = 'absolute'
     video.style.width = '75%'
     video.style.height = '60%'
     video.style.right = '12%'
-    video.style.top = '27%'
+    video.style.top = '20%'
 }
 
 
@@ -113,28 +114,29 @@ function fabricación() {
 
 //Texto
 
-
-function escritura(entrada) {
+function composicion(entrada) {
     let texto = entrada.split('')
     let i = 0
+
     pagIzquierda.textContent = ''
+
     let escritor = setInterval(() => {
         pagIzquierda.append(texto[i])
         i++
         if (i == texto.length) {
             clearInterval(escritor)
         }
-    }, 10)
-
-
+    }, 20)
 }
 
 function escribir() {
     let i = 0
     let array = [parrafo1, parrafo2, parrafo3, parrafo4, parrafo5, parrafo6, parrafo7, parrafo8]
+
     pagIzquierda.onclick = () => {
-        escritura(array[i])
+        composicion(array[i])
         i++
+        console.log(i);
         if (i == 4) {
             pagDerecha.style.visibility = 'visible'
         }

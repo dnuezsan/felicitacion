@@ -5,6 +5,11 @@
     font-family: 'navidad';
     src: url(../recursos/fuentes/Red\ Christmas\ -\ Personal\ Use.otf);
 }
+
+@font-face{
+    font-family: 'calanthe';
+    src: url(../recursos/fuentes/Hello\ Calanthe\ DEMO.ttf);
+}
 /*Fin fuentes*/
 
 .maincontainer{
@@ -100,6 +105,7 @@ main h1{
 
 #pagIzquierda{
     margin-left: 8%;
+    font-family: "calanthe";
 }
 
 #pagDerecha{
@@ -172,6 +178,7 @@ footer{
     text-align: center;
     bottom: 0px;
     padding-left: 3.5%;
+    position: absolute;
 }
 
 footer div {
